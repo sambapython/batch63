@@ -1,0 +1,27 @@
+INFO:root:program started
+INFO:root:a vlaue entered
+INFO:root:b value entered.
+DEBUG:root:before converting: a=12,b=6
+INFO:root:a value converted.
+INFO:root:b value converted
+DEBUG:root:after converting: a=12.0,b=6.0
+DEBUG:root:result=2.0
+INFO:root:program ended
+INFO:root:program started
+INFO:root:a vlaue entered
+INFO:root:b value entered.
+DEBUG:root:before converting: a=12,b=0
+INFO:root:a value converted.
+INFO:root:b value converted
+DEBUG:root:after converting: a=12.0,b=0.0
+ERROR:root:ERROR: Not expecting zero for b
+INFO:root:program ended
+2019-08-29 09:40:19,975=>INFO==>program started
+2019-08-29 09:40:21,135=>INFO==>a vlaue entered
+2019-08-29 09:40:22,030=>INFO==>b value entered.
+2019-08-29 09:40:22,030=>DEBUG==>before converting: a=12,b=6
+2019-08-29 09:40:22,030=>INFO==>a value converted.
+2019-08-29 09:40:22,030=>INFO==>b value converted
+2019-08-29 09:40:22,031=>DEBUG==>after converting: a=12.0,b=6.0
+2019-08-29 09:40:22,031=>DEBUG==>result=2.0
+2019-08-29 09:40:22,031=>INFO==>program ended

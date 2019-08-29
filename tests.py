@@ -31,5 +31,3 @@ class AddTest(unittest.TestCase):
 	def setUpClass(cls):
 		cls.user="samba"
 		print("this is setUp class method")
-
-unq
