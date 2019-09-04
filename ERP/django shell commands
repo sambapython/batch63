@@ -1,0 +1,50 @@
+ python manage.py shell
+Python 3.7.0 (default, Jun 28 2018, 13:15:42) 
+Type 'copyright', 'credits' or 'license' for more information
+IPython 6.5.0 -- An enhanced Interactive Python. Type '?' for help.
+
+In [1]: from sales.models import Customer
+
+In [2]: cust1 = Customer(name="jayaram")
+
+In [3]: cust1.save()
+
+In [4]: cust1 = Customer(name="vedhanvesh")
+
+In [5]: cust1.save()
+
+In [6]: cust1 = Customer(name="sailaxmi")
+
+In [7]: cust1.save()
+
+In [8]: Customer.objects.all()
+Out[8]: <QuerySet [<Customer: Customer object (3)>, <Customer: Customer object (4)>, <Customer: Customer object (5)>]>
+
+In [9]: [i for i in Customer.objects.all()]
+Out[9]: 
+[<Customer: Customer object (3)>,
+ <Customer: Customer object (4)>,
+ <Customer: Customer object (5)>]
+
+In [10]: [i.name for i in Customer.objects.all()]
+Out[10]: ['jayaram', 'vedhanvesh', 'sailaxmi']
+
+In [11]: Customer.objects.get(id=3)
+Out[11]: <Customer: Customer object (3)>
+
+In [12]: cust = Customer.objects.get(id=3)
+
+In [13]: cust
+Out[13]: <Customer: Customer object (3)>
+
+In [14]: cust.name
+Out[14]: 'jayaram'
+
+In [15]: cust.name="JAYARAM"
+
+In [16]: cust.save()
+
+In [17]: cust.delete()
+Out[17]: (1, {'sales.Customer': 1})
+
+In [18]:                                                               
